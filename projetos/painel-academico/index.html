@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Acadêmico | Controle de Estudos e Projetos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="top-nav" aria-label="Navegação do projeto">
+      <a class="back-link" href="../../index.html">Voltar ao portfólio</a>
+      <span>Protótipo funcional local</span>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Organização acadêmica</p>
+      <h1>Painel Acadêmico</h1>
+      <p class="subtitle">Controle de Estudos e Projetos</p>
+      <p class="hero-description">
+        Protótipo funcional local para organização acadêmica. Permite cadastrar
+        disciplinas, tarefas e projetos diretamente no navegador, com dados
+        salvos localmente.
+      </p>
+      <div class="hero-actions">
+        <button class="button button-light" type="button" id="loadExamplesButton">Carregar exemplos</button>
+        <button class="button button-outline" type="button" id="clearPanelButton">Limpar painel</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section summary-section" aria-labelledby="summary-title">
+      <div class="section-heading">
+        <p class="eyebrow">Resumo</p>
+        <h2 id="summary-title">Visão geral do painel</h2>
+      </div>
+
+      <div class="summary-grid">
+        <article class="summary-card">
+          <span class="card-icon">DI</span>
+          <p>Total de disciplinas</p>
+          <strong id="totalSubjects">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="card-icon">TA</span>
+          <p>Total de tarefas</p>
+          <strong id="totalTasks">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="card-icon">PD</span>
+          <p>Tarefas pendentes</p>
+          <strong id="pendingTasks">0</strong>
+        </article>
+        <article class="summary-card">
+          <span class="card-icon">PR</span>
+          <p>Projetos em andamento</p>
+          <strong id="activeProjects">0</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section workspace-grid" aria-label="Cadastros do painel">
+      <article class="form-panel" aria-labelledby="subject-form-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Cadastro</p>
+          <h2 id="subject-form-title">Nova disciplina</h2>
+        </div>
+        <form id="subjectForm" class="record-form">
+          <label>
+            Nome da disciplina
+            <input type="text" id="subjectName" placeholder="Ex: Bootcamp I" required>
+          </label>
+          <label>
+            Foco atual
+            <input type="text" id="subjectFocus" placeholder="Ex: Entrega intermediária" required>
+          </label>
+          <label>
+            Status
+            <select id="subjectStatus" required>
+              <option value="Pendente">Pendente</option>
+              <option value="Em andamento">Em andamento</option>
+              <option value="Concluído">Concluído</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Adicionar disciplina</button>
+        </form>
+      </article>
+
+      <article class="form-panel" aria-labelledby="task-form-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Cadastro</p>
+          <h2 id="task-form-title">Nova tarefa</h2>
+        </div>
+        <form id="taskForm" class="record-form">
+          <label>
+            Nome da tarefa
+            <input type="text" id="taskName" placeholder="Ex: Revisar documentação" required>
+          </label>
+          <label>
+            Prazo
+            <input type="text" id="taskDeadline" placeholder="Ex: Próxima semana" required>
+          </label>
+          <label>
+            Status
+            <select id="taskStatus" required>
+              <option value="Pendente">Pendente</option>
+              <option value="Em andamento">Em andamento</option>
+              <option value="Concluído">Concluído</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Adicionar tarefa</button>
+        </form>
+      </article>
+
+      <article class="form-panel" aria-labelledby="project-form-title">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">Cadastro</p>
+          <h2 id="project-form-title">Novo projeto</h2>
+        </div>
+        <form id="projectForm" class="record-form">
+          <label>
+            Nome do projeto
+            <input type="text" id="projectName" placeholder="Ex: Painel Acadêmico" required>
+          </label>
+          <label>
+            Descrição curta
+            <textarea id="projectDescription" rows="3" placeholder="Explique o objetivo do projeto" required></textarea>
+          </label>
+          <label>
+            Foco ou tecnologia
+            <input type="text" id="projectFocus" placeholder="Ex: HTML, CSS e JavaScript" required>
+          </label>
+          <label>
+            Status
+            <select id="projectStatus" required>
+              <option value="Pendente">Pendente</option>
+              <option value="Em andamento">Em andamento</option>
+              <option value="Concluído">Concluído</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Adicionar projeto</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="subjects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Disciplinas</p>
+        <h2 id="subjects-title">Disciplinas cadastradas</h2>
+      </div>
+      <div class="cards-grid" id="subjectsList"></div>
+    </section>
+
+    <section class="section" aria-labelledby="tasks-title">
+      <div class="section-heading">
+        <p class="eyebrow">Tarefas</p>
+        <h2 id="tasks-title">Tarefas acadêmicas</h2>
+      </div>
+      <div class="task-table" id="tasksList" role="table" aria-label="Lista de tarefas acadêmicas"></div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Projetos</p>
+        <h2 id="projects-title">Projetos cadastrados</h2>
+      </div>
+      <div class="project-grid" id="projectsList"></div>
+    </section>
+
+    <section class="section learning-section" aria-labelledby="learning-title">
+      <div class="section-heading">
+        <p class="eyebrow">Aprendizados</p>
+        <h2 id="learning-title">O que este projeto ajuda a praticar</h2>
+      </div>
+      <ul class="learning-list">
+        <li>Organização de informações acadêmicas em uma interface clara.</li>
+        <li>Manipulação simples de dados com JavaScript puro.</li>
+        <li>Salvamento local de registros usando localStorage.</li>
+        <li>Atualização automática de indicadores no dashboard.</li>
+        <li>Planejamento de uma ferramenta útil sem backend ou sistema complexo.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Kauan Souza de Aquino</p>
+    <span>Projeto parte do portfólio acadêmico da disciplina Bootcamp I.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

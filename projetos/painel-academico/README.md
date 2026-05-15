@@ -1,31 +1,46 @@
 # Painel Acadêmico — Controle de Estudos e Projetos
 
-Este projeto apresenta uma proposta de painel simples para organização acadêmica, com foco no controle de disciplinas, tarefas, prazos e projetos em andamento.
-
 ## Objetivo
 
-Criar uma estrutura simples para auxiliar estudantes a organizarem suas atividades acadêmicas, acompanharem prazos importantes e manterem uma visão clara dos projetos em desenvolvimento.
+Criar um protótipo funcional local para organização acadêmica. A página permite cadastrar disciplinas, tarefas e projetos diretamente no navegador, com dados salvos localmente por meio do `localStorage`.
 
-## Funcionalidades previstas
+O projeto faz parte do Portfólio Acadêmico e Profissional de Kauan Souza de Aquino, estudante de Engenharia de Software no UniCEUB.
 
-- Listagem de disciplinas;
-- Registro de tarefas acadêmicas;
-- Controle de prazos;
-- Classificação de status das atividades;
-- Organização de projetos;
-- Área para links e materiais úteis.
+## Funcionalidades
 
-## Tecnologias previstas
+- Cadastro de disciplinas com nome, foco atual e status.
+- Cadastro de tarefas com nome, prazo e status.
+- Cadastro de projetos com nome, descrição, foco ou tecnologia e status.
+- Listagem dos registros cadastrados.
+- Alteração de status entre Pendente, Em andamento e Concluído.
+- Exclusão de disciplinas, tarefas e projetos.
+- Resumo automático com totais do painel.
+- Botão para carregar dados de exemplo.
+- Botão para limpar o painel.
+- Mensagem de estado vazio quando não houver registros.
+- Persistência local dos dados no navegador.
+
+## Tecnologias utilizadas
 
 - HTML
 - CSS
-- GitHub
-- GitHub Pages
+- JavaScript
+
+Não há login, backend, banco de dados externo, frameworks ou bibliotecas externas.
+
+## Como funciona o armazenamento
+
+Os dados são salvos no navegador do usuário usando `localStorage`. Isso significa que os registros continuam disponíveis ao recarregar a página no mesmo navegador, mas não são enviados para servidor e não ficam disponíveis em outros dispositivos.
 
 ## Status do projeto
 
-Projeto em desenvolvimento. A primeira versão será criada como uma página simples em HTML e CSS para compor o portfólio acadêmico.
+Em andamento como protótipo funcional local para a Entrega Intermediária da disciplina Bootcamp I.
 
-## Aprendizados esperados
+## Aprendizados
 
-O projeto contribuirá para praticar organização de interfaces, estruturação de conteúdo, planejamento de funcionalidades e aplicação de conceitos básicos de desenvolvimento web.
+- Organização acadêmica em formato de dashboard.
+- Estruturação de interface com HTML semântico.
+- Estilização responsiva com CSS.
+- Manipulação simples de dados com JavaScript puro.
+- Uso de `localStorage` para persistência local.
+- Atualização dinâmica de listas, cards e indicadores.
