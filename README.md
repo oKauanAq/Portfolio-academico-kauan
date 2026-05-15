@@ -1,5 +1,4 @@
-# Portfolio-academico-kauan
-# Portfólio Acadêmico e Profissional — Kauan Aquino
+# Portfólio Acadêmico e Profissional — Kauan Souza de Aquino
 
 Este repositório foi desenvolvido como parte da Entrega Intermediária da disciplina Bootcamp I, com o objetivo de organizar projetos acadêmicos e pessoais em um ambiente versionado, documentado e integrado ao perfil profissional no LinkedIn.
 
@@ -7,27 +6,22 @@ Este repositório foi desenvolvido como parte da Entrega Intermediária da disci
 
 O objetivo deste portfólio é apresentar minha trajetória inicial como estudante de Engenharia de Software, reunindo projetos acadêmicos, experiências de aprendizagem, documentos e materiais desenvolvidos durante minha formação.
 
-Este repositório também tem como finalidade praticar o uso de ferramentas importantes para a área de tecnologia, como Git, GitHub, GitHub Pages, documentação com Markdown e integração com plataformas profissionais.
+Este repositório também tem como finalidade praticar o uso de ferramentas importantes para a área de tecnologia, como Git, GitHub, GitHub Pages, documentação com Markdown, HTML, CSS e integração com plataformas profissionais.
 
 ## Sobre mim
 
-Meu nome é Kauan Aquino. Sou estudante de Engenharia de Software no CEUB e estou construindo minha base acadêmica e profissional nas áreas de desenvolvimento de software, banco de dados, engenharia de software, tecnologia aplicada e soluções digitais.
+Meu nome é Kauan Souza de Aquino. Sou estudante de Engenharia de Software no UniCEUB, atualmente no 1º semestre, e estou construindo minha base acadêmica e profissional na área de tecnologia.
 
-Tenho interesse em aprender continuamente, desenvolver projetos práticos e aplicar tecnologia para resolver problemas reais de forma organizada, responsável e eficiente.
+Tenho interesse em desenvolvimento web, Java, Python, HTML, CSS, ferramentas de IA, automações de sistemas e soluções digitais para negócios. Busco evoluir continuamente nos estudos e aplicar a tecnologia para resolver problemas reais de forma simples, organizada e responsável.
+
 
 ## Projetos em destaque
 
-### Projeto OSSI — Organização Social Santa Isabel
+### Projeto OSSI — Obra Social Santa Isabel
 
-Projeto acadêmico relacionado à Organização Social Santa Isabel, com foco na análise de dificuldades digitais enfrentadas pelo público atendido e na busca por soluções de apoio tecnológico.
+Projeto acadêmico relacionado à Obra Social Santa Isabel, com foco na análise de dificuldades digitais enfrentadas pelo público atendido e na busca por soluções de apoio tecnológico.
 
 Esse projeto permitiu observar problemas reais envolvendo uso de tecnologia, acesso a serviços digitais, segurança online e necessidade de orientação prática.
-
-### DER — Banco de Dados
-
-Projeto acadêmico de modelagem de banco de dados, com foco na construção de um Diagrama Entidade-Relacionamento.
-
-O objetivo é representar entidades, atributos, relacionamentos e cardinalidades, aplicando conceitos iniciais de banco de dados e organização lógica das informações.
 
 ### Painel Acadêmico — Controle de Estudos e Projetos
 
@@ -43,6 +37,9 @@ A ideia é aplicar conhecimentos básicos de desenvolvimento web em uma soluçã
 - Markdown
 - HTML
 - CSS
+- Java
+- Python
+- Ferramentas de IA
 - LinkedIn
 - OBS Studio
 
@@ -60,8 +57,8 @@ Durante o desenvolvimento deste portfólio, foram trabalhados conceitos importan
 
 ## Links
 
-- GitHub Pages: inserir link após publicação
-- LinkedIn: inserir link após atualização do perfil
+- GitHub Pages: https://okauanaq.github.io/Portfolio-academico-kauan/
+- LinkedIn: https://www.linkedin.com/in/kauan-souza-de-aquino-334b493b0/
 - Vídeo de apresentação: inserir link após publicação no YouTube
 
 ## Status
