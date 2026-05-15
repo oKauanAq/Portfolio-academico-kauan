@@ -148,7 +148,10 @@ body {
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.project-card p {
+  flex-grow: 1;
 }
 
 .tag {
@@ -161,6 +164,23 @@ body {
   font-size: 13px;
   font-weight: bold;
   width: fit-content;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+  transition: 0.2s;
+}
+
+.project-link:hover {
+  background-color: #1d4ed8;
 }
 
 .skills-list {
