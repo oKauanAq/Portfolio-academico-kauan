@@ -59,7 +59,6 @@ Durante o desenvolvimento deste portfólio, foram trabalhados conceitos importan
 
 - GitHub Pages: https://okauanaq.github.io/Portfolio-academico-kauan/
 - LinkedIn: https://www.linkedin.com/in/kauan-souza-de-aquino-334b493b0/
-- Vídeo de apresentação: inserir link após publicação no YouTube
 
 ## Status
 
