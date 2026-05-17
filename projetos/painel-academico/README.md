@@ -34,13 +34,5 @@ Os dados são salvos no navegador do usuário usando `localStorage`. Isso signif
 
 ## Status do projeto
 
-Em andamento como protótipo funcional local para a Entrega Intermediária da disciplina Bootcamp I.
+Em andamento.
 
-## Aprendizados
-
-- Organização acadêmica em formato de dashboard.
-- Estruturação de interface com HTML semântico.
-- Estilização responsiva com CSS.
-- Manipulação simples de dados com JavaScript puro.
-- Uso de `localStorage` para persistência local.
-- Atualização dinâmica de listas, cards e indicadores.
