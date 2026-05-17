@@ -40,25 +40,8 @@ A proposta do projeto é demonstrar uma solução simples e prática para organi
 - CSS
 - JavaScript
 - Java
-- Python básico
-- Ferramentas de IA
+- Python
 - LinkedIn
-- OBS Studio
-
-## Aprendizados
-
-Durante o desenvolvimento deste portfólio, foram trabalhados conceitos importantes para a formação em Engenharia de Software, como:
-
-- Organização de repositórios;
-- Versionamento de projetos;
-- Documentação técnica;
-- Publicação de página com GitHub Pages;
-- Integração entre GitHub e LinkedIn;
-- Estruturação de portfólio acadêmico e profissional;
-- Criação de página web com HTML e CSS;
-- Desenvolvimento de protótipo funcional local com JavaScript;
-- Uso de localStorage para persistência de dados no navegador;
-- Apresentação de projetos de forma clara e objetiva.
 
 ## Links
 
